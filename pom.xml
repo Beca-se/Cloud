@@ -34,6 +34,9 @@
 
     <modules>
         <module>ApiGateWay</module>
+        <module>EurekaOne</module>
+        <module>EurekaTwo</module>
+        <module>Payment</module>
     </modules>
 
     <!--spring cloud 版本依赖-->

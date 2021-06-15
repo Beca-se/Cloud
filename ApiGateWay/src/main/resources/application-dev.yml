@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: after_route
-          uri: https://example.org
+        - id: myRoute
+          uri: lb://service
           predicates:
-            - Cookie=mycookie,mycookievalue
+            - Path=/service/**
