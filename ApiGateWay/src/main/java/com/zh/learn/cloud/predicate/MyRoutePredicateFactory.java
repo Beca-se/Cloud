@@ -1,5 +1,6 @@
 //package com.zh.learn.cloud.predicate;
 //
+//
 //import org.springframework.cloud.gateway.handler.predicate.AbstractRoutePredicateFactory;
 //import org.springframework.cloud.gateway.handler.predicate.HeaderRoutePredicateFactory;
 //import org.springframework.http.server.reactive.ServerHttpRequest;
@@ -13,7 +14,7 @@
 // * @author ZhouHu
 // * @since 2020-08-20 23:33
 // **/
-//public class MyRoutePredicateFactory extends AbstractRoutePredicateFactory<HeaderRoutePredicateFactory.Config> {
+//public class MyRoutePredicateFactory extends AbstractRoutePredicateFactory<MyRoutePredicateFactory.Config> {
 //
 //    public MyRoutePredicateFactory() {
 //        super(HeaderRoutePredicateFactory.Config.class);

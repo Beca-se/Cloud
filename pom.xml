@@ -7,7 +7,7 @@
     <groupId>com.zh.learn.cloud</groupId>
     <artifactId>Cloud</artifactId>
     <version>1.0</version>
-
+    <packaging>pom</packaging>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
@@ -37,6 +37,8 @@
         <module>EurekaOne</module>
         <module>EurekaTwo</module>
         <module>Payment</module>
+        <module>Common</module>
+        <module>Order</module>
     </modules>
 
     <!--spring cloud 版本依赖-->

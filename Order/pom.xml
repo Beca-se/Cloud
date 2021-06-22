@@ -8,9 +8,10 @@
         <artifactId>Cloud</artifactId>
         <version>1.0</version>
     </parent>
-
-    <artifactId>Payment</artifactId>
+    <artifactId>Order</artifactId>
     <version>1.0</version>
+
+
     <dependencies>
 
         <dependency>
@@ -37,19 +38,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-
         <!-- Spring cloud Eureka client 依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
-
+        <!-- Spring cloud Eureka client 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
-
 </project>

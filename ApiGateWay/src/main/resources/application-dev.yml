@@ -1,8 +1,20 @@
 spring:
   cloud:
     gateway:
-      routes:
-        - id: myRoute
-          uri: lb://service
-          predicates:
-            - Path=/service/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+          filters:
+            - StripPrefix=1
+#      routes:
+#        - id: myRoute
+#          filters:
+#            - StripPrefix=1
+#          predicates:
+#            - Path=/{segment}/api/**
+#          uri: lb://payment
+#        - id: test
+#          uri: lb://account
+#          predicates:
+#            - Path=/account/**
