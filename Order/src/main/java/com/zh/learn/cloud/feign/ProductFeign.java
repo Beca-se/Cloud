@@ -16,13 +16,13 @@ import java.util.List;
  * @Desc
  * @create: 2021-06-21 16:32
  **/
-@FeignClient(value = "payment")
-public interface PaymentFeign {
+@FeignClient(value = "product")
+public interface ProductFeign {
     List<String> ad = new ArrayList<String>();
 
-    @GetMapping("/api/v1/payment")
+    @GetMapping("/api/v1/product")
     String hello(@RequestParam("name") String name);
 
-    @PostMapping("/api/v1/payment")
+    @PostMapping("/api/v1/product")
     String test(@RequestBody PaymentTransaction paymentTransaction);
 }
